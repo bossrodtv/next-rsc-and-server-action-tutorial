@@ -21,3 +21,5 @@ export function createDbClient(dbUrl: string = DEFAULT_DB_URL) {
 }
 
 export type DbClient = ReturnType<typeof createDbClient>;
+
+export const dbClient = createDbClient();
